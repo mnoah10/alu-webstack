@@ -24,6 +24,6 @@ frontend www-http
     default_backend www-backend
 
 frontend www-https
-    bind *:443 ssl crt /etc/haproxy/certs/www.yourdomain.com.pem
+    bind *:443 ssl crt /etc/haproxy/certs/www.YOUR_REAL_DOMAIN.pem
     http-request set-header X-Forwarded-Proto https
     default_backend www-backend
